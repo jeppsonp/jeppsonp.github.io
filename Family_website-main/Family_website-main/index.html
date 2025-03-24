@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/1aa8315ab7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="/CSS/custom_scrollbar.css" />
+    <title>Family Website</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <div id="logo">
+          <a href="index.html">Family<span> Website</span></a>
+        </div>
+        <div class="navbox">
+          <ul>
+            <li class="navitems">
+              <a href="index.html" class="active">HOME</a>
+            </li>
+            <li class="navitems">
+              <a href="members.html" class="">MEMBERS</a>
+            </li>
+            <li class="navitems">
+              <a href="gallery.html" class="">GALLERY</a>
+            </li>
+            <li class="navitems">
+              <a href="residence.html" class="">RESIDENCE</a>
+            </li>
+            <li class="navitems">
+              <a href="about_me.html" class="">ABOUT ME</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburgerButton">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="mobile_menu close">
+      <div class="close_menu"><i class="fa-solid fa-xmark"></i></div>
+      <ul>
+        <li>
+          <a href="index.html" class="active">HOME</a>
+        </li>
+        <li>
+          <a href="members.html" class="">MEMBERS</a>
+        </li>
+        <li>
+          <a href="gallery.html" class="">GALLERY</a>
+        </li>
+        <li>
+          <a href="residence.html" class="">RESIDENCE</a>
+        </li>
+        <li>
+          <a href="about_me.html" class="">ABOUT ME</a>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <!-- content -->
+      <div id="header-content">
+        <h1 class="main-heading">Welcome to our Jeppson Family website</h1>
+        <p>
+          Welcome to our family website.  Here you will find information about our family members, where we live, and some of our favorite photos. We hope you enjoy what you see!
+        </p>
+        <a href="#members"><button class="btn">EXPLORE</button></a>
+        <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      </div>
+    </header>
+    <section>
+      <div id="members">
+        <h1 class="heading">MEMBERS</h1>
+        <hr />
+        <p class="under-heading">
+          Here are the immediate family links.
+        </p>
+        <div class="name-container">
+          <div class="namebox">
+            <div class="namecard">
+              <div class="imgbox" id="father"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Paul Jeppson<br /><span>Father</span></h1>
+                  <h2>Retired Business Analyst BYU Idaho <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >                   
+                  Know More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="namecard">
+            <div class="imgbox" id="mother"></div>
+            <div class="details-area">
+              <div class="namecard-details">
+                <h1>Rebecca Jeppson FNP-C<br /><span>Mother</span></h1>
+                <h2>Wife, Mother, Nurse Practitioner <br /><span></span></h2>
+                <button
+                  class="btn-knowmore"
+                  onclick="document.location='members.html'"
+                >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="kristiKingston"></div>
+              <div class="details-area">
+                <div class="namecard-details" id="Kristi">
+                  <h1>Kristi and Kingston White<br /><span>Florida Bunch</span></h1>
+                  <h2>Boca Raton FL<br /></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='about_me.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="Ryan"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Ryan and Alex Jeppson<br /><span>Rexburg Bunch</span></h1>
+                  <h2>Rexburg ID <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="Lauren"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Lauren and Kody Georgeson<br /><span>Pocatello Bunch</span></h1>
+                  <h2>Pocatello ID <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+
+                    >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="namecard">
+              <div class="imgbox" id="Zach"></div>
+              <div class="details-area">
+                <div class="namecard-details">
+                  <h1>Zachary and Jessica Jeppson <br /><span>Enoch Bunch</span></h1>
+                  <h2>Enoch UT <br /><span></span></h2>
+                  <button
+                    class="btn-knowmore"
+                    onclick="document.location='members.html'"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gallery">
+        <h1 class="heading">Fun Together</h1>
+        <hr />
+        <p class="under-heading">
+          Here are some of our photos on different occasions, celebrations,
+          moments and random ones too. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Saepe explicabo quo ad pariatur natus beatae quae
+          reiciendis ipsa atque reprehenderit?
+        </p>
+        <div class="photobox">
+          <img src="/images/occasion-pics/1.jpg" alt="" />
+          <img src="/images/occasion-pics/2.jpg" alt="" />
+          <img src="/images/occasion-pics/3.jpg" alt="" />
+          <img src="/images/occasion-pics/4.jpg" alt="" />
+         
+        <div class="navigation-arrow">
+          <a href="gallery.html"><p>&#8594;</p></a>
+        </div>
+      </div>
+      <div id="residence">
+        <h1 class="heading">Location of Home</h1>
+        <hr />
+        <!-- <p class="under-heading"></p> -->
+        <div class="content">
+          <div class="address">
+            <!-- <div class="residence-box" id="description">
+              <p>848 S 7th W Sugar City, Idaho</p>
+            </div> -->
+            <div class="residence-box" id="location">
+              <iframe
+                class="location-tag"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2191.206616627127!2d-111.76097532503962!3d43.862854738847496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5353f5ffdc37071f%3A0xe29e2fd822708691!2s848%20S%20Seventh%20W%2C%20Sugar%20City%2C%20ID%2083448!5e1!3m2!1sen!2sus!4v1738182445153!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <h2 class="sub-heading">
+            Here are some pictures of sites close to us
+            <i class="fa-solid fa-arrow-turn-down"></i>
+          </h2>
+          <hr id="tubelight" />
+          <div class="city-pics">
+            <img src="/images/city-pics/1.jpg" alt="image" />
+            <img src="/images/city-pics/2.jpg" alt="image" />
+            <img src="/images/city-pics/3.jpg" alt="image" />
+            <img src="/images/city-pics/4.jpg" alt="image" />
+            <img src="/images/city-pics/5.jpg" alt="image" />
+            <img src="/images/city-pics/6.jpg" alt="image" />
+            <img src="/images/city-pics/7.jpg" alt="image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Made with <i class="fa fa-heart"></i> by Pablo</p>
+      <div id="connect">
+        <a
+          href="mailto:jeppsonp@gmail.com"
+          class="fa-solid fa-envelope"
+        ></a>
+        <a
+          href="https://www.instagram.com/pjeppson/"
+          target="_blank"
+          class="fa-brands fa-instagram"
+        ></a>
+        <a
+          href="https://github.com/jeppsonp"
+          target="_blank"
+          class="fa-brands fa-github"
+        ></a>
+        <!-- <a href="https://www.instagram.com/billionaire.s_club/" target="_blank" class="fa fa-instagram"></a> -->
+        <a
+          href="https://www.linkedin.com/in/paul-jeppson-maom-ssbb-35a6175a/"
+          target="_blank"
+          class="fa-brands fa-linkedin"
+        ></a>
+      </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

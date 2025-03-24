@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 2rem;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
+    width: 100%;
+    /* overflow-x: hidden; */
+    /* background-color:hsla(0,100%,50%,1); */
+    background-image:
+    radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    background:black url('/images/f4.jpg') no-repeat center center/cover;
+    z-index: -1;
+    min-height: 100vh;
+    width: 100%;
+    filter: brightness(50%);
+}
+header #header-content{
+    height: 100vh;
+    width: 100%;
+    padding: 0px 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header #header-content .main-heading{
+    margin-top: 5rem;
+    font-size: 5rem;
+    text-align: center;
+}
+header #header-content p{
+    max-width: 600px;
+    padding: 0px 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 200;
+}
+.btn{   
+    border: 1.5px solid white;
+    background-color: transparent;
+    width: 100px;
+    margin: 15px 0px;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+    letter-spacing: .8px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.arrow{
+    position: absolute;
+    bottom: 5rem;
+    /* margin-top: 8rem; */
+    animation: arrow 2.3s ease-in-out infinite;
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+/* ---->Section */
+section{
+    /* background-image: linear-gradient(to right top, #0b1e3b, #502f58, #92405c, #c0624c, #cb983d); */
+    
+    /* color: white; */
+    padding: 20px 0px;
+    width: 100%;
+}
+.members{
+    min-height: 100vh;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-container{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.namebox{
+    position: absolute;
+    /* padding: 10rem 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap:25px; */
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.namebox .namecard{
+    background-color: white;
+    position: relative;
+    display: flex;  
+    align-items: center;
+    justify-content: flex-end;
+    height: 150px;
+    width: 220px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.384);
+    transition: .3s;
+}
+.namebox .namecard:hover{
+    height: 200px;
+    cursor:pointer;
+}
+.namebox .namecard:hover .imgbox{
+    height: 100px;
+    width: 100px;
+    top: -50px;
+}
+.namebox .namecard .imgbox{
+    height: 110px;
+    width: 110px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    border-radius: 100px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: .5s;
+}
+.namebox .namecard #father{
+    background: url('/images/father-pic1.jpg') no-repeat center center/cover;
+}
+.namebox .namecard #mother{
+    background: url('/images/mother.jpg') no-repeat center center/cover;
+}
+.namebox .namecard #myimage{
+    background: url('/images/myimg.jpg') no-repeat center center/cover;
+}
+.namebox .namecard #Koshal{
+    background: url('/images/occasion-pics/kohin.jfif') no-repeat center center/cover;
+}
+.namebox .namecard #Gagan{
+    background: url('/images/occasion-pics/gagan.jpg') no-repeat center center/cover;
+}
+.namecard .details-area{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.namecard .details-area .namecard-details{
+    color: black;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(80px);
+    transition: .5s;
+}
+.namecard:hover .namecard-details{
+    transform: translateY(0px);
+}
+.namecard-details h1{
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+.namecard-details h1 span{
+    font-size: 1.7rem;
+    opacity: 50%;
+    font-weight: 600;
+}
+.namecard-details h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.namecard-details .btn-knowmore{
+    padding: 9px 12px;
+    margin: 12px 0px;
+    font-size: 1.35rem;
+    border: none;
+    border-radius: 7px;
+    background-color: #F24C4C;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: .5s;
+}
+.namecard-details .btn-knowmore:hover{
+    cursor: pointer;
+    background-color: #a83535;
+}
+
+/* Gallery section */
+.photobox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    transform: rotate(-5deg);
+    /* overflow-x: hidden; */
+}
+.photobox img{
+    height: 200px;
+    border: 3px solid white;
+    box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.425);
+    transition: .5s;
+}
+.photobox img:hover{
+    transform: scale(120%);
+}
+#gallery{
+    overflow:hidden;
+}
+#gallery .navigation-arrow{
+    width: fit-content;
+    margin-top: 50px;
+    padding: .5rem 3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    transition: .5s;
+}
+#gallery a{
+    color: white;
+    text-decoration: none;
+}
+#gallery .navigation-arrow p{
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+#gallery .navigation-arrow:hover{
+    background-color: rgba(255, 255, 255, 0.151);
+    cursor: pointer;
+}
+.address{
+    /* display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 10px; */
+}
+.address .residence-box{
+    /* height: 300px;
+    width: 300px; */
+    width: 100%;
+    height: 450px;
+    /* margin: 50px; */
+    margin: 5rem 0;
+    /* border-radius: 10px; */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.267);
+}
+.address #description{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+.location-tag{
+    /* border-radius: 10px; */
+    height: 100%;   
+    width: 100%;
+}
+.sub-heading{
+    padding-top: 20px;
+    text-align: center;
+    text-transform:uppercase;
+}
+#tubelight{
+    margin-top: 1rem;
+    /* width: 90%; */
+}
+
+.city-pics{
+    margin: 50px 0px;
+    padding: 10px 10px;
+    margin-inline: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.city-pics img{
+    object-fit: cover;
+    filter: brightness(70%);
+    height: 200px;
+    /* max-width: 99%; */
+    /* border: 8px solid white; */
+    /* border-radius: 5px; */
+    box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.425); 
+    transition: .3s;
+}
+.city-pics img:hover{
+    filter: brightness(105%); 
+
+}
+
+
+/* Footer */
+footer{
+    padding:30px;
+    background-color: #00092C;
+    color: white;
+}
+footer p{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+footer #connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    margin: 5px 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 10px;
+}
+footer a:hover{
+    color: rgb(0, 225, 255);
+}
+
+/* Utilities */
+
+section .heading{
+    text-align: center; 
+    font-size: 5rem;
+    margin-top: 1rem;
+    padding: 30px;
+}
+.under-heading{
+    margin: 0px 10px;
+    padding: 30px 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+}
+hr{
+    /* background-color: white; */
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 1200px) {
+    .namebox{
+        padding: 0 1px;
+        row-gap: 60px;
+    }
+    .namebox .namecard{
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+
+header #header-content .main-heading{
+    font-size: 3.5rem;
+}
+header #header-content p{
+    font-size: 1rem;
+}
+
+.name-container{
+    height: 40rem;
+}
+.photobox {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.photobox img{
+    max-height: 100px;
+}
+
+#location{
+    width: 100%;
+}
+
+section .heading{
+    font-size: 3rem;
+}
+
+#logo a{
+    font-size: 2rem;
+}
+ 
+}
+
+
+@media only screen and (max-width: 581px) {
+    body{
+        background-color:#eeff99;
+        background-image:
+        radial-gradient(at 40% 20%, hsla(28,100%,80%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189,100%,80%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+    
+    }
+    .name-container{
+        height: 60rem;
+    }
+    .namecard-details h1{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .namecard-details h1 span{
+        font-size: 1.5rem;
+    }
+    .namecard-details h2{
+        font-size: 1.7rem;
+    }
+    .namecard-details .btn-knowmore{
+        font-size: 1.2rem;
+    }
+    .sub-heading{
+        font-size: 2rem;
+    }
+    .city-pics img{
+        width: 98%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 387px) {
+    .namebox .namecard:nth-child(1) .namecard-details{
+        transform: translateY(100px);
+    }
+    .namebox .namecard:nth-child(1):hover .namecard-details{
+        transform: translateY(10px);
+    }
+    .namebox .namecard{
+        width: 180px;
+    }
+    
+}
+
+@media only screen and (max-width: 365px) {
+    .namebox .namecard{
+        width:45vw;
+    }
+    .namebox .namecard .imgbox{
+        height: 90px;
+        width: 90px;
+       
+    }
+    .namebox .namecard:hover .imgbox{
+        top: -30px;
+        height: 70px;
+        width: 70px;
+    }
+    
+}
+
+/* @media only screen and (max-width: 276px) {
+    .namebox .namecard{
+        width:45vw;
+    }
+} */

@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 2rem;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+    height: 100%;
+    width: 100%;
+    background-color: #1B2430;
+    color: white;
+}
+
+/* content */
+header{
+    min-height: 70vh;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url('/images/5.jpg') no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%);
+    /* border: 2px solid red; */
+}
+header #header-content{
+    width: 100%;
+    max-width: 500px;
+    padding: 0px 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header #header-content .main-heading{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+}
+header #header-content p{
+    /* padding: 0px 200px; */
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Section----> */
+
+section{
+    margin: 0;
+    padding: 10px 1rem;
+
+    background-image: linear-gradient(to right, #101827, #1a2b3d);
+}
+section .namastey{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .namastey img{
+    height: 150px;
+}
+section .heading-box{
+    padding: 2rem 0;
+    /* width: 100%; */
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
+    font-size: 5rem;    
+    text-align: center;
+}
+
+section h1 span{
+    /* font-size: 5rem; */
+  /* background: -webkit-linear-gradient(#ff6464, #ffc978); */
+  background: radial-gradient(#64e68f, #9198e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    /* color:#D9F8C4; */
+    
+}
+
+section .city-pics{
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+section .city-pics img{
+    height: 230px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    transition: .3s;
+}
+section .city-pics img:hover{
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.486);
+    filter: brightness(130%);
+}
+
+
+/* Footer */
+footer{
+    padding:30px;
+    background-color: #00092C;
+    color: white;
+}
+footer p{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+footer #connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    margin: 5px 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+footer a:hover{
+    color: rgb(0, 225, 255);
+}
+
+/* Utilities----> */
+section .heading{
+    text-align: center; 
+    font-size: 5rem;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+
+.under-heading{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin-inline: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+h3{
+    color: rgba(0, 0, 0, 0.514);
+}
+.subheading{
+    font-size: 3.5rem;
+    text-decoration:underline;
+}
+hr{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* responsive code */
+
+@media screen and (max-width:1000px) {
+    section .city-pics img{
+        height: 170px;
+    }
+    header::before{
+        background: url('/images/city-pics/mobile_img_Hathras.jpg') no-repeat top center/cover;
+      
+    }
+}
+
+@media screen and (max-width:730px) {
+    section h1{
+        font-size:100%;
+    }
+    
+}
+
+/* @media screen and (max-width:600px) {
+    section .city-pics img{
+        height: auto;
+        height: 20vh;
+    }
+} */
+
+@media screen and (max-width:600px) {
+    section .namastey img{
+        height: 100px;
+    }
+    section .heading-box{
+        min-height: auto;
+    }
+
+    section .city-pics img{
+        height: auto;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    section .heading-box{
+       font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    header #header-content .main-heading{
+        font-size: 3.5rem;
+    }
+    section .namastey img{
+        height: 50px;
+    }
+}

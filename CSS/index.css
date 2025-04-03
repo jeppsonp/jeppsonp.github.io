@@ -287,13 +287,13 @@ section{
     background-color: rgba(255, 255, 255, 0.151);
     cursor: pointer;
 }
-.address{
-    /* display: flex;
+/* .address{
+    display: flex;
     justify-content:center;
     align-items:center;
     flex-wrap: wrap;
-    gap: 10px; */
-}
+    gap: 10px; 
+} */
 .address .residence-box{
     /* height: 300px;
     width: 300px; */

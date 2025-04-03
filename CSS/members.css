@@ -158,7 +158,10 @@ section::after{
     right: -15%;
     background: linear-gradient(#002B5B,#8FE3CF);
 }  */
-
+.fa-brands, .fab{
+    font-size: 2rem;
+    color: white;
+}
 section{
     overflow: hidden;
 }
